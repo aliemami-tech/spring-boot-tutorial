@@ -13,3 +13,35 @@ To start the application, run the following command:
 
 ```bash
 mvn spring-boot:run
+
+
+# 📘 API Documentation
+
+Once the application is running, you can access the Swagger UI at:
+
+🔗 [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+
+Use this interface to explore and test the available REST APIs.
+
+---
+
+# 📦 Tech Stack
+
+- Java  
+- Spring Boot  
+- Maven  
+- Swagger (OpenAPI)
+
+---
+
+# 💡 Notes
+
+Feel free to fork or clone this repository for your learning or enhancement purposes.
+
+---
+
+# 🔗 Swagger UI Address
+
+You can always access the API documentation here:
+
+👉 [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
