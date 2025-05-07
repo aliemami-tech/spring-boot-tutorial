@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/hello")
 public class InitialController {
 
-    @GetMapping("/{name}")
+    @GetMapping("/{name}") // TODO: user ResponseEntity<> instead of String type
     public String HelloWorld(@PathVariable String name){
         return "Hello " + name;
     }
