@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/hello")
+@RequestMapping("/api/v1/greet")
 public class InitialController {
 
     @GetMapping("/{name}") // TODO: user ResponseEntity<> instead of String type.
-    public String HelloWorld(@PathVariable String name){
+    public String greetingUser(@PathVariable String name){
         return "Hello " + name;
     }
 

@@ -17,10 +17,10 @@ public class InitialControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    public void testHelloWorldEndpoint() throws Exception {
+    public void testGreetingUserEndpoint() throws Exception {
         String name = "John";
 
-        mockMvc.perform(get("/api/v1/hello/{name}", name))
+        mockMvc.perform(get("/api/v1/greet/{name}", name))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Hello John"));
     }
