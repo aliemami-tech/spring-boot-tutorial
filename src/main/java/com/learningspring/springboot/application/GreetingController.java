@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1/greet")
-public class InitialController {
+public class GreetingController {
 
     @GetMapping("/{name}") // TODO: user ResponseEntity<> instead of String type.
     public String greetingUser(@PathVariable String name){
