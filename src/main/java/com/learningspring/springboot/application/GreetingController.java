@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/greet")
 public class GreetingController {
 
-    @GetMapping("/{name}") // TODO: user ResponseEntity<> instead of String type.
+    @GetMapping("/{name}") // TODO: use ResponseEntity<> instead of String type.
     public String greetingUser(@PathVariable String name){
         return "Hello " + name + " Welcome to Spring course.";
     }
