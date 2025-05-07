@@ -43,8 +43,3 @@ Feel free to fork or clone this repository for your learning or enhancement purp
 
 ---
 
-# 🔗 Swagger UI Address
-
-You can always access the API documentation here:
-
-👉 [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
