@@ -40,6 +40,5 @@ Use this interface to explore and test the available REST APIs.
 # 💡 Notes
 
 Feel free to fork or clone this repository for your learning or enhancement purposes.
-
 ---
 
