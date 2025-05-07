@@ -12,6 +12,9 @@ Make sure you have [Maven](https://maven.apache.org/) installed.
 To start the application, run the following command:
 
 ```bash
+
+mvn test
+
 mvn spring-boot:run
 
 
