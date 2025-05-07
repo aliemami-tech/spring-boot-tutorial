@@ -12,7 +12,7 @@ public class GreetingController {
 
     @GetMapping("/{name}") // TODO: user ResponseEntity<> instead of String type.
     public String greetingUser(@PathVariable String name){
-        return "Hello " + name;
+        return "Hello " + name + "Welcome to Spring course.";
     }
 
 
