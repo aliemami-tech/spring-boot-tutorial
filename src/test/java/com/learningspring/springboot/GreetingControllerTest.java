@@ -1,7 +1,7 @@
 package com.learningspring.springboot;
 
 
-import com.learningspring.springboot.application.GreetingController;
+import com.learningspring.springboot.controller.GreetingController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -22,6 +22,14 @@ public class GreetingControllerTest {
 
         mockMvc.perform(get("/api/v1/greet/{name}", name))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello John"));
+                .andExpect(content().string("Hello John Welcome to Spring course."));
     }
+
+    @Test
+    public void testGreetingUserWithEmptyName() throws Exception {
+        mockMvc.perform(get("/api/v1/greet/ "))
+                .andExpect(status().isNotFound());
+    }
+
+
 }
